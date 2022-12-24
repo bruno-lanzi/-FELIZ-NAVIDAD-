@@ -1,0 +1,244 @@
+* {
+    font-family: 'Dancing Script', cursive;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    
+}
+
+body{
+    height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: flex-end;
+    z-index: 1;
+    
+}
+.snow{
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: -100%;
+    animation: fall 8s linear infinite;
+}
+
+.secciones{
+    width: 100%;
+    background: rgb(58, 27, 132);
+    z-index: 2;
+}
+
+.header{
+    width: 100%;
+    min-height: 40vh;
+    padding: 1em 2em;
+
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+.header .h1{
+    color: gold;
+    text-shadow: 4px 4px 10px black;
+    
+    font-weight: 600em;
+    font-size: 5em;
+    text-align: center;
+    line-height: 1em;
+    
+    
+  
+}
+.header .p{
+    color: gold;
+    text-shadow: 4px 4px 10px black;
+    margin: 1em;
+    font-weight: 100em;
+    font-size: 3em;
+    text-align: center;
+    line-height: 1em;
+    text-align: center;
+    
+}
+
+.seccion .info{
+    width: 100%;
+    margin: 2em;
+    padding: 1em;
+
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+.seccion .h2{
+    
+    margin:1em 0 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.seccion .h3{
+    margin:1em 0 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.seccion .ul{
+    margin:1em 0 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+   
+}
+.seccion .ul .li{
+    margin: 0 1em;
+   
+}
+.seccion .ul .a{  
+    border: 1px solid rgba(0,0,0, .2);
+    margin:2em 0 0;
+    padding: 0.5em 0.5em 0.5em;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all .5s ease;
+    color: black;
+}
+.seccion .ul .a:hover{
+    border-color: black;
+    color: white;
+
+}
+
+.arbol{
+    width: 100%;
+
+    max-width: 620px;
+    margin: 1em auto;
+    position: relative;
+    z-index: 2;
+}
+.estiloArbol{
+    width: 100%;
+    filter: brightness(0.8);
+    
+}
+.bolitas img{
+    width: 6%;
+    position: absolute;
+    
+    height: auto;
+    animation: light1 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    
+}
+.bolitas .amarilla1{
+    left: 37%;
+    bottom: 18%;
+    
+}
+.bolitas .estrella{
+    width: 10%;
+    left: 45%;
+    bottom: 87%;
+}
+.bolitas .roja1{
+    left: 64%;
+    bottom: 16%;
+}
+.bolitas .violeta1{
+    left: 57%;
+    bottom: 24%;
+}
+.bolitas .azul1{
+    left: 38%;
+    bottom: 38%;
+}
+.bolitas .amarilla2{
+    left: 63%;
+    bottom: 34%;
+}
+.bolitas .roja2{
+    left: 29%;
+    bottom: 46%;
+}
+.bolitas .violeta2{
+    left: 61%;
+    bottom: 44%;
+}
+.bolitas .azul2{
+    left: 62%;
+    bottom: 52.5%;
+}
+.bolitas .amarilla3{
+    left: 36.5%;
+    bottom: 55%;
+}
+.bolitas .roja3{
+    left: 53%;
+    bottom: 64%;
+}
+.bolitas .violeta3{
+    left: 40%;
+    bottom: 71%;
+}
+.bolitas .azul3{
+    left: 50%;
+    bottom: 81%;
+}
+
+
+.footer{
+    background: white;
+    width: 100%;
+    margin-top: 1em;
+    z-index: 2;
+    text-align: center;
+    
+}
+.musica{
+    background-color: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+@keyframes light1{
+    from{
+        filter:brightness(1);
+
+    }
+    to{
+        filter: brightness(1.8) drop-shadow(0 0 20px rgba(247, 210, 0));
+    }
+}
+@keyframes fall{
+    0%{
+        top: -100%;
+    }
+    100%{
+        top: 150%;
+    }
+}
